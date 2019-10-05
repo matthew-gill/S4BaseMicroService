@@ -7,7 +7,7 @@ services:
           - 8123:80
         volumes:
           - .docker/config/vhosts:/etc/apache2/sites-enabled
-          - .:/home/wwwroot/sf4
+          - .:/home/wwwroot/sf4:cached
         depends_on:
           - php
 
